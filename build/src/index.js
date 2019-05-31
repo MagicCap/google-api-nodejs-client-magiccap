@@ -1,3 +1,4 @@
+"use strict";
 /**
  * Copyright 2019 Google LLC
  *
@@ -13,12 +14,14 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
+Object.defineProperty(exports, "__esModule", { value: true });
 /*! THIS FILE IS AUTO-GENERATED */
-
-import {GoogleApis} from './googleapis';
-const google = new GoogleApis();
-export {google, GoogleApis};
-
-export {drive_v2} from './apis/drive/v2';
-export {drive_v3} from './apis/drive/v3';
+const googleapis_1 = require("./googleapis");
+exports.GoogleApis = googleapis_1.GoogleApis;
+const google = new googleapis_1.GoogleApis();
+exports.google = google;
+var v2_1 = require("./apis/drive/v2");
+exports.drive_v2 = v2_1.drive_v2;
+var v3_1 = require("./apis/drive/v3");
+exports.drive_v3 = v3_1.drive_v3;
+//# sourceMappingURL=index.js.map

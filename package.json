@@ -1,11 +1,4 @@
 {
-  "nyc": {
-    "exclude": [
-      "build/src/apis",
-      "build/test",
-      "samples"
-    ]
-  },
   "license": "Apache-2.0",
   "dependencies": {
     "google-auth-library": "^4.0.0",
@@ -19,24 +12,7 @@
   "name": "googleapis",
   "version": "40.0.0",
   "scripts": {
-    "pretest": "npm run compile",
-    "prepare": "npm run compile",
-    "test": "nyc mocha build/test",
-    "predocs": "npm run build-tools",
-    "docs": "node build/src/generator/docs",
-    "system-test": "mocha build/system-test",
-    "samples-test": "cd samples && npm link ../ && pwd && npm test",
-    "lint": "gts check && eslint 'samples/**/*.js'",
-    "compile": "tsc -p .",
-    "build-tools": "tsc -p tsconfig.tools.json",
-    "clean": "gts clean",
-    "codecov": "nyc report && codecov -f .coverage/*.json",
-    "fix": "eslint --fix '**/*.js' && gts fix",
-    "pregenerate": "npm run build-tools",
-    "generate": "node build/src/generator/generate.js",
-    "postgenerate": "npm run fix",
-    "docs-test": "linkinator docs -r --skip www.googleapis.com",
-    "predocs-test": "npm run docs"
+    "compile": "tsc -p ."
   },
   "author": "Google Inc.",
   "keywords": [

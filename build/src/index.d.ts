@@ -13,12 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
 /*! THIS FILE IS AUTO-GENERATED */
-
-import {GoogleApis} from './googleapis';
-const google = new GoogleApis();
-export {google, GoogleApis};
-
-export {drive_v2} from './apis/drive/v2';
-export {drive_v3} from './apis/drive/v3';
+import { GoogleApis } from './googleapis';
+declare const google: GoogleApis;
+export { google, GoogleApis };
+export { drive_v2 } from './apis/drive/v2';
+export { drive_v3 } from './apis/drive/v3';
